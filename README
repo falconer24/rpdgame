@@ -1,0 +1,38 @@
+Repeated Prisoners Dilemma
+
+
+
+Files submitted --
+	
+1. rpd_main.c:		Launches the game, maintains the scores and the moves board.
+
+2. rpd_opponent1.c:	Simulated opponent whose character can be controlled by
+			a macro in the same file. Contains the function for
+			opponent's algorithm.
+
+3. rpd_algo1.c:		First algorithm that we devised. Makes use of
+			probability of the opponent's moves.
+
+4. rpd_algo2.c:		Improvement over the first algorithm. Combines the
+			probabilistic method of the first algorithm with the 
+			tit-for-tat strategy
+
+5. rpd.h:		Header file for the globals and structures used in the
+			code.
+
+6. trials.sh:		Shell script which runs 500 games, with 50 rounds each,
+			each with different inputs to the random number
+			generator used in the opponent.
+
+			To run the first algorithm, run this with argument 1 and 
+			to run the second one, with argument 2 
+			
+			./trials.sh 1 OR ./trials.sh 2
+
+7. Makefile:		Makefile for this program
+			
+			Different options to the makefile --
+
+			make algo1 
+			make algo2 
+			make clean
